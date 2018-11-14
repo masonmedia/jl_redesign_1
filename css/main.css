@@ -1,0 +1,1300 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * CSS file: for jaxx.io the official website for jaxx liberty, the leading Multi-Platform Wallet created by Anthony Di Iorio, Co-Founder of Ethereum and Founder and CEO of Decentral and Jaxx.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body {
+	font-family: 'Helvetica Neue', 'Oswald', Montserrat, Avenir, Helvetica, sans-serif;
+	overflow-x: hidden;
+	width: 100%;
+}
+/* links */
+
+a,
+a:active,
+a:focus,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+a:hover {
+	color: #ff6902;
+	text-decoration: none;
+}
+footer a:hover {
+	color: rgb(38, 65, 118);
+	text-decoration: none;
+}
+/* height + width utilities */
+
+.min-25 {
+	min-height: 25vh;
+}
+.min-50 {
+	min-height: 50vh;
+}
+.min-70 {
+	min-height: 70vh;
+}
+.min-100 {
+	min-height: 100vh;
+}
+.fs {
+	min-height: 100vh;
+}
+.w-50-sm {
+	width: 50%;
+}
+/*  buttons */
+
+.btn,
+.btn-default,
+.btn-lg {
+    border-radius: 23px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.btn-orange,
+.btn-orange:active,
+.btn-orange:focus,
+.btn-orange:visited {
+	background: #ff6902;
+	border: 1px solid #ff6902;
+	color: white;
+	font-weight: bold;
+}
+.btn-orange:hover {
+	background: transparent;
+	border: 1px solid #ff6902;
+	color: #ff6902;
+}
+.btn-outline-orange,
+.btn-outline-orange:active,
+.btn-outline-orange:focus,
+.btn-outline-orange:visited {
+	background: transparent;
+	border: 1px solid #ff6902;
+	color: #ff6902;
+}
+.btn-outline-orange:hover {
+	background: #ff6902;
+	border: 1px solid #ff6902;
+	color: #fff;
+}
+.btn-navy,
+.btn-navy:active,
+.btn-navy:focus,
+.btn-navy:visited {
+	background: rgb(38, 66, 119);
+	border: 1px solid rgb(38, 66, 119);
+	color: white;
+	font-weight: bold;
+}
+.btn-navy:hover {
+	background: transparent;
+	border: 1px solid rgb(38, 66, 119);
+	color: rgb(38, 66, 119);
+}
+/* borders */
+
+.border-navy {
+	border-color: rgb(38, 66, 119) !important;
+}
+.border-orange {
+	border-color: #ff6902 !important;
+}
+.border-grey {
+	border-color: lightgrey !important;
+}
+/* text */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+.btn {
+	font-family: 'Helvetica Neue', Avenir, sans-serif;
+}
+p {
+	font-size: 19px;
+	font-weight: 300;
+}
+.site-title {
+	/*    font-size: 10vmin;*/
+	font-size: 5vw;
+	font-size: 8vw;
+	font-size: 10vmin;
+	font-weight: 300;
+	line-height: 110%;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.site-sub-title,
+.page-sub-title {
+	font-size: 4vmin;
+}
+.page-title {
+	font-size: 15vmin;
+	font-weight: 900;
+	letter-spacing: -6px;
+	line-height: 90%;
+}
+.section-title {
+	font-size: 8vmin;
+	/*    font-size: 6vmin;*/
+	text-transform: uppercase;
+}
+.section-sub-title {
+	font-size: 6vmin;
+}
+.site-title-2 {
+	font-size: 30vw;
+	font-size: 35vw;
+	font-weight: 900;
+}
+.site-title-3 {
+	font-size: 25vw;
+	font-weight: 900;
+	letter-spacing: -40px;
+	padding: 0 40px 0 0;
+	text-transform: uppercase;
+}
+.word-break {
+	word-break: break-all;
+}
+
+/* fonts + text effects */
+
+.line-height {
+	line-height: 80%;
+}
+.opacity {
+	opacity: 0.8;
+}
+.text-op {
+	color: rgba(0, 0, 0, 0.03);
+	font-size: 10vw;
+}
+.x-bold {
+	font-weight: 900;
+}
+.stroke-n {
+	color: transparent;
+	-webkit-text-stroke: 1px rgb(38, 65, 118);
+}
+.stroke-o {
+	color: transparent;
+	-webkit-text-stroke: 0.5px #ff6902;
+	-webkit-text-stroke: 0.5px rgba(255, 105, 2, 0.5);
+}
+.stroke-p {
+	color: transparent;
+	-webkit-text-stroke: 1px #fb99f4;
+}
+.stroke-t {
+	color: transparent;
+	-webkit-text-stroke: 1px turquoise;
+	-webkit-text-stroke: 1px rgba(64, 224, 208, 0.3);
+}
+
+/* position */
+
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.top-0 {
+	top: 0;
+}
+.right-0 {
+	right: 0;
+}
+.left-0 {
+	left: 0;
+}
+.bottom-0 {
+	bottom: 0;
+}
+.z--1 {
+	z-index: -1;
+}
+.z-0 {
+	z-index: 0;
+}
+.z-1 {
+	z-index: 1;
+}
+.z-2 {
+	z-index: 2;
+}
+.z-3 {
+	z-index: 3;
+}
+/* animation */
+
+.animated-slow {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+
+/* patterns */
+
+.bg-dots {
+	background-color: transparent;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.16' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+/* colors ===================*/
+
+.orange {
+	color: #ff6902;
+}
+.navy {
+	color: rgb(38, 65, 118);
+	color: rgb(38, 66, 119);
+	/* from style guide */
+}
+/* bg colors ======================*/
+
+.bg-orange {
+	background-color: #ff6902 !important;
+}
+.bg-orange-op {
+	background-color: rgba(255, 105, 2, 0.5);
+}
+.bg-navy {
+	background-color: rgb(38, 65, 118);
+	background-color: rgb(38, 66, 119);
+}
+.bg-turq {
+	background-color: rgb(64, 224, 208);
+	background-color: #40e0d0 !important;
+}
+.bg-purple {
+	background-color: #fb99f4 !important;
+}
+.bg-yellow {
+	background-color: yellow !important;
+}
+.bg-white-op {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.9);
+}
+.bg-black {
+	background: #000;
+}
+
+.bg-light-grey {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* effects */
+
+.skew {
+	-webkit-transform: skew(0, -4.7deg);
+	transform: skew(0, -4.7deg);
+}
+
+/* images + logos ======================*/
+
+.img {
+	height: auto;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
+}
+.img-full {
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
+}
+/* jaxx logo ======================*/
+
+.jaxx-navbar-brand {
+	height: auto;
+	margin: 10px 10px 0;
+	width: 85px;
+}
+.jaxx-mobile-menu {
+	height: auto;
+	width: 40px;
+}
+.jaxx-logo-jumbo {
+	height: auto;
+	margin-bottom: -20px;
+	width: 20vw;
+}
+.jaxx-logo,
+.jaxx-heart-logo {
+	height: auto;
+	width: 500px;
+}
+.jaxx-logo-text,
+.jaxx-logo-heart {
+	height: auto;
+	width: 20vmin;
+	margin-top: 30px;
+}
+
+/* partnerships logos ======================*/
+
+.partner-logo-home {
+	height: auto;
+	margin: 10px 0;
+	max-width: 100%;
+}
+.partner-logo {
+	border-radius: 100%;
+	height: 100px;
+	margin: 20px 0;
+	width: 100px;
+}
+.big-logo {
+	width: 110px;
+}
+#mobile .fa {
+    font-size: 50px;
+}
+
+/* page/section images */
+
+/* home page ======================*/
+
+/*Photo by Helena Lopes on Unsplash*/
+
+.bg--home-banner {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-home-banner.jpg) center;
+	background: url(/img/redesign-img/jaxx-laptop.jpg) center;
+	background-size: cover;
+}
+.bg--home-devices {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-home-banner.jpg) center;
+	background: url(/img/redesign-img/jaxx-iphone-on-macbook.jpg) center;
+	background-size: cover;
+}
+.bg--home-features {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-home-banner.jpg) center;
+	background: url(/img/redesign-img/jaxx-android-girl-hand.png) center;
+	background-size: cover;
+}
+.bg--home-security {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-home-banner.jpg) center;
+	background: url(/img/redesign-img/jaxx-iphone-macbook-desk-wood.png) center;
+	background: url(/img/redesign-img/jaxx-phone-desk.jpg) center;
+	background-size: cover;
+}
+.bg--home-testimonials {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-home-banner.jpg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-testimonials.jpeg) center;
+	background-size: cover;
+}
+.bg--home-card-support {
+	background: url(/img/jaxx-support-banner.jpg) center;
+	background-size: cover;
+}
+.bg--home-card-blog {
+	background: url(/img/jaxx-home-banner.jpg) center;
+	background-size: cover;
+}
+.bg--home-card-blog {
+	background: url(/img/jaxx-home-banner.jpg) center;
+	background-size: cover;
+}
+.bg--home-social {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-home-banner.jpg) center;
+	background: url(/img/jaxx-partners.jpeg) center;
+	background-size: cover;
+}
+.bg--home-download {
+	background: url(/img/jaxx-app-homescreen.jpg) center;
+	background-size: cover;
+}
+
+.bg-img-app-homepage {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-app-homescreen.jpg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-app-homescreen.jpg) center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* downloads section bg img */
+
+.bg-img-downloads {
+	background: url(/img/jaxx-multidevice-outline-3.svg) center;
+	background-size: 50%;
+}
+/* community section bg img -- Photo by Nicholas Green on Unsplash */
+
+.bg-img-partners {
+	background: url(/img/jaxx-partners.jpeg) center;
+	background-size: cover;
+}
+/*download section image + gradient*/
+
+/*Photo by rawpixel on Unsplash*/
+
+.bg-download-gradient {
+	background: rgb(38, 65, 118);
+	/* fallback for old browsers */
+	background: -webkit-gradient(linear, left top, right top, from(rgba(38, 65, 118, 0.8)), to(rgba(5, 117, 230, 0.8))), url(/img/jaxx-group-circle.jpg) center;
+	background: linear-gradient(to right, rgba(38, 65, 118, 0.8), rgba(5, 117, 230, 0.8)), url(/img/jaxx-group-circle.jpg) center;
+	background-blend-mode: multiply;
+	background-size: cover;
+}
+/* cookies consent banner ======================*/
+
+.cc-message, .cc-btn {
+	font-family: Oswald, Avenir, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.cc-message a,
+.cc-link {
+	color: #ff6902;
+}
+.cc-window {
+    opacity: 1;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+.cc-window.cc-invisible {
+    opacity: 0;
+}
+.cc-revoke.cc-top {
+    display: none;
+    top: 0;
+    left: 3em;
+    border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+.cc-revoke.cc-bottom {
+    display: none;
+  bottom: 0;
+  left: 3em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+.cc-revoke.cc-left {
+    display: none;
+  left: 3em;
+  right: unset;
+}
+.cc-revoke.cc-right {
+    display: none;
+    right: 3em;
+    left: unset;
+}
+
+/*  about page ======================*/
+
+/*about banner:  Photo by Sammie Vasquez on Unsplash*/
+
+.bg-img-about {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/img/jaxx-people-2.jpg) center 20%;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/jaxx-people-2.jpg) center 20%;
+	background-size: cover;
+}
+/*Photo by Ian Schneider on Unsplash*/
+
+.bg-img-about-passion {
+	background: url(/img/jaxx-about-passion-redux.jpg) center 20%;
+	background-size: cover;
+}
+/* pexels */
+
+.bg-img-jump {
+	background: url(/img/jaxx-jump-2.jpg) center;
+	background: url(/img/jaxx-jump-2-redux.jpg) center;
+	background-size: cover;
+}
+/* pexels */
+
+.bg-img-heart {
+	background: url(/img/jaxx-heart-hands.jpg) center;
+	background-size: cover;
+}
+.bg-img-office {
+	background: url(/img/jaxx-careers-office.jpg) center;
+	background-size: cover;
+}
+.bg-img-office-2 {
+	background: url(/img/decentral-office-original-redux.jpg) center;
+	background-size: cover;
+}
+/*  features og page ======================*/
+
+/* features-og page modals */
+
+/*features modal */
+
+.modal.fade {
+	-webkit-transition: opacity .5s linear, top .5s ease-out;
+	transition: opacity .5s linear, top .5s ease-out;
+}
+/*or add fade-scale class*/
+
+.fade-scale {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+}
+.fade-scale.in {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.bg-img-androids {
+	background: url(/img/jaxx-multiple-phones.png) center no-repeat;
+	background-size: contain;
+}
+.bg-img-multidevice-outline {
+	background: url(/img/jaxx-multidevice-outline-3.svg) center;
+	background-size: contain;
+}
+/* feawures svg geometric shapes*/
+
+.bg-img-svg-shapes {
+	background: url(/img/jaxx-geo-shapes-2.svg) center;
+	background-size: cover;
+}
+.heart-list-icon {
+	width: 40px;
+}
+
+/* downloads ======================*/
+
+/* img from pexels */
+
+.bg-img-banner-downloads {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(/img/jaxx-jump-2.jpg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/jaxx-jump-2.jpg) center;
+	background-size: cover;
+}
+
+/*make desktop HERE words hover with pointer for modal activation*/
+#legacyDesktop span {
+    transition: all .2s ease;
+}
+#legacyDesktop span:hover {
+    cursor: pointer;
+}
+
+/* security ======================*/
+
+/* img-jaxx-security on homepage source = pixabay */
+
+/* security page banner source = pixabay */
+
+.bg-img-banner-security {
+	/*tvs b&w */
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-security-tvs.jpg) center top;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-security-tvs.jpg) center top;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/img/jaxx-security-tvs-redux.jpg) center top;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/jaxx-security-tvs-redux.jpg) center top;
+	background-size: cover;
+}
+.security-shield {
+	top: 0px;
+	width: 300px;
+}
+.img-shield {
+	opacity: 0.2;
+	height: auto;
+	margin: 0 auto;
+	position: absolute;
+	width: 400px;
+	z-index: 0;
+}
+.bg-img-jaxx-hand {
+	background: url(/img/jaxx-hand-device.jpg) center;
+	background-size: cover;
+}
+.bg-img-hand-device {
+	background: url(/img/jaxx-hand-device.jpg) center;
+	background-size: cover;
+}
+/*Photo by Helena Lopes on Unsplash*/
+
+.bg-img-people-1 {
+	background: url(/img/jaxx-four-people.jpeg) center;
+	background-size: cover;
+}
+/* pexels */
+
+.bg-img-encryption {
+	background: url(/img/jaxx-encryption.jpg) center;
+	background-size: cover;
+}
+/* community ======================*/
+
+/*Photo by Jack Finnigan on Unsplash*/
+
+.bg-img-street-pano {
+	background: url(/img/jaxx-street-pano.jpg) center;
+	background-size: cover;
+}
+.bg-img-community-people {
+	background: url(/img/jaxx-people-4.jpeg) center;
+	background-size: cover;
+}
+/* support ======================*/
+
+/* img from pexels */
+
+.bg-img-banner-support {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/img/jaxx-support-banner.jpg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/jaxx-support-banner.jpg) center;
+	background-size: cover;
+}
+/*Photo by Anthony DELANOIX on Unsplash*/
+
+.bg-img-support-welcome {
+	background: url(/img/jaxx-support-welcome.jpg) center;
+	background-size: cover;
+}
+/* changelog ======================*/
+
+/* pexels */
+
+.bg-img-banner-changelog {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-changelog.jpg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-changelog.jpg) center;
+	background-size: cover;
+}
+/* legal ======================*/
+
+/* pexels */
+
+.bg-img-banner-legal {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-terms.jpeg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-terms.jpeg) center;
+	background-size: cover;
+}
+/* third parties */
+
+/*Photo by 13on on Unsplash*/
+
+.bg-img-banner-thirdparties {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-people-1.jpeg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-people-1.jpeg) center;
+	background-size: cover;
+}
+/*changelog=======================*/
+
+/* features phone slider ======================*/
+
+/* pexels */
+
+.bg-img-banner-features {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-features-banner.jpg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-features-banner.jpg) center bottom;
+	background-size: cover;
+}
+/* unsplash */
+
+.bg-img-testimonials {
+	background: url(/img/jaxx-testimonials.jpeg) center;
+	background-size: cover;
+}
+/* pexels */
+
+.bg-img-banner-community {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-community-banner.jpg) center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-community-banner.jpg) center;
+	background-size: cover;
+}
+/* section styles ======================*/
+
+/* nav ======================*/
+
+#home nav,
+#home .navbar {
+	background: transparent;
+	border-bottom: 0;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+nav,
+.navbar {
+	background: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid lightgrey;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.nav-link,
+.nav-item {
+	color: #fff;
+	color: grey;
+	font-size: 19px;
+	font-weight: 300;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+nav .active {
+	color: #ff6902;
+}
+/* for navbar change color on scroll */
+
+nav.fixed-top.scrolled,
+#home .navbar.fixed-top.scrolled,
+.navbar.fixed-top.scrolled {
+	border-bottom: 1px solid rgba(38, 65, 118);
+	border-bottom: none;
+	background-color: rgba(255, 255, 255, 0.9) !important;
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+/* mobile nav toggler rotate on hover */
+
+.jaxx-mobile-menu {
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.jaxx-mobile-menu:hover {
+	color: white;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+/*  icons */
+
+/*
+i {
+	font-size: 7vmin;
+	padding: 20px 30px;
+}
+*/
+.icon {
+	font-size: 50px;
+}
+.fa {
+	font-size: 10vmin;
+    font-size: 8vmin;
+	padding: 20px 30px;
+}
+.fa--stroke {
+    color: transparent;
+}
+.fa--stroke-g {
+	-webkit-text-stroke: 2px grey;
+}
+.fa--stroke-o {
+	-webkit-text-stroke: 2px #ff6902;
+}
+
+
+/* home ======================*/
+
+/* bs carousel */
+
+/*stop slides from changing size w text*/
+
+.item .active {
+	margin: auto;
+}
+/* make carousel full screen */
+
+/*
+.carousel,.item {height:100%;}
+.carousel-inner{height:100%;}
+*/
+
+/*  footer ======================*/
+
+/* pexels */
+
+.bg-img-footer {
+	background: url(/img/jaxx-footer.jpeg) center;
+	background-size: cover;
+}
+footer li a {
+	font-size: 18px;
+}
+.footer-leaf {
+	height: 40px;
+}
+.copyright {
+	background: #ff6902;
+}
+/* media queries ======================*/
+
+@media (max-width: 1200px) {
+	/*    md width class */
+	.downloads-img {
+		height: auto;
+		width: 100%;
+	}
+}
+@media (max-width: 992px) {
+    /* nav */
+	#home nav,
+	#home .navbar,
+	nav,
+	.navbar {
+		background: rgb(38, 65, 118) !important;
+		border-bottom: 1px solid transparent;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+	}
+	/*  mobile menu */
+	.navbar-toggler {
+		padding: 0;
+		font-size: 1.25rem;
+		line-height: 1;
+		background-color: transparent;
+		border: 1px solid transparent;
+		border-radius: 0;
+	}
+	.nav-link {
+		border-top: 1px solid lightgrey;
+		padding: 1rem 1rem;
+	}
+	.nav-link:hover {
+		color: #ff6902;
+	}
+	div[class*="bg-img"] {
+		min-height: 50vh;
+	}
+	/*  make all bg images scroll */
+	div[class*="bg-img"] {
+		background-attachment: scroll;
+	}
+	/*  make all 100vh divs 50vh */
+	div[class*="min-100"] {
+		min-height: 70vh;
+	}
+	.page-title {
+		font-size: 12vmin;
+		letter-spacing: -5px;
+	}
+	/*features device styles*/
+	.features-device {
+		height: auto;
+		width: 35%;
+	}
+	/* flex order */
+	.o-1 {
+		-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
+		order: -1;
+	}
+	.o-2 {
+		-webkit-box-ordinal-group: 3;
+		-ms-flex-order: 2;
+		order: 2;
+	}
+	.o-3 {
+		-webkit-box-ordinal-group: 4;
+		-ms-flex-order: 3;
+		order: 3;
+	}
+	.o-4 {
+		-webkit-box-ordinal-group: 5;
+		-ms-flex-order: 4;
+		order: 4;
+	}
+	.o-12 {
+		-webkit-box-ordinal-group: 13;
+		-ms-flex-order: 12;
+		order: 12;
+	}
+	/*
+    .partner-logo {
+        height: auto;
+        width: 70%;
+    }
+*/
+	/* front page downloads img*/
+	.downloads-img {
+		height: auto;
+		left: 0;
+		width: 100%;
+	}
+	/* download buttons reduce size */
+	#download .btn-lg {
+		font-size: 18px;
+		padding: .375rem .75rem;
+		padding: 5px 10px;
+	}
+	.btn-lg {
+		font-size: 18px;
+		padding: .375rem .75rem;
+		padding: 5px 10px;
+	}
+}
+
+@media (max-width: 768px) {    
+	.jaxx-logo-jumbo {
+		height: auto;
+		margin-bottom: -10;
+		width: 200px;
+	}
+	.bg-fs-img-banner-home {
+		background-attachment: scroll;
+	}
+	/* homepage front title */
+	.site-title {
+		font-size: 7vmin;
+	}
+	.site-sub-title {
+		font-size: 5vmin;
+	}
+	.page-title {
+		font-size: 15vmin;
+		font-weight: 900;
+		letter-spacing: -3px;
+		line-height: 85%;
+	}
+	/* partner logo resize */
+	.partner-logo {
+		height: auto;
+		width: 70%;
+	}
+	/*features device styles*/
+	.features-device {
+		height: auto;
+		width: 40%;
+	}
+	/* features page: not using =====*/
+	.swiper-slide .text {
+		width: 100%;
+	}
+	/* security page*/
+	.img-shield {
+		width: 300px;
+	}
+	/*  make all 100vh divs 50vh */
+	div[class*="min-100"] {
+		min-height: 70vh;
+	}
+}
+@media screen and (max-width: 601px) {
+	.jaxx-logo {
+		width: 300px;
+	}
+	.jaxx-logo-text {
+		width: 120px;
+	}
+	.jaxx-logo-heart {
+		width: 100px;
+	}
+	/*homepage site title */
+	.site-title {
+		font-size: 9vw;
+		margin-bottom: 10px;
+	}
+	/* cookies banner button */
+	.cc-btn {
+		border-width: 1px;
+		width: 100%;
+	}
+	/* partner logo resize */
+	.partner-logo-home {
+		height: auto;
+		width: 70%;
+	}
+	/* download call to action heading text */
+	#cta h2 {
+		font-size: 22px;
+	}
+	.p-5-sm {
+		padding: 3rem;
+	}
+/*     downlads page google play btn */
+
+	/*features device styles*/
+	.features-device {
+		height: auto;
+		width: 50%;
+	}
+	/* flex orders */
+	.o-1 {
+		-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
+		order: -1;
+	}
+	.o-12 {
+		-webkit-box-ordinal-group: 13;
+		-ms-flex-order: 12;
+		order: 12;
+	}
+	footer p {
+		font-size: 14px;
+	}
+	.footer-leaf {
+		height: 35px;
+	}
+}
+/* make features page modal 80% width */
+
+@media (min-width: 576px) {
+	.modal-dialog {
+		max-width: 80%;
+	}
+}
+@media (min-width: 576px) {
+	.bg-img-hand-device-2 {
+		background: url(/img/jaxx-hand-device.jpg) center;
+		background-size: cover;
+	}
+}
+@media (max-width: 400px) {
+	/* partner logo resize */
+	.partner-logo {
+		height: auto;
+		width: 75%;
+	}
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+	display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+	/* 1 */
+}
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+	white-space: inherit;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+.clearfix:after {
+	clear: both;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster */
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: " (" attr(href)")";
+	}
+	abbr[title]:after {
+		content: " (" attr(title)")";
+	}
+	/*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+	pre {
+		white-space: pre-wrap !important;
+	}
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	/*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+	thead {
+		display: table-header-group;
+	}
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
