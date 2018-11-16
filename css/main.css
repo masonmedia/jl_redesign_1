@@ -225,9 +225,9 @@ p {
 	font-size: 4vmin;
 }
 .page-title {
-	font-size: 15vmin;
+	font-size: 10vmin;
 	font-weight: 900;
-	letter-spacing: -6px;
+	letter-spacing: -4px;
 	line-height: 90%;
 }
 .section-title {
@@ -268,6 +268,11 @@ p {
 }
 .x-bold {
 	font-weight: 900;
+}
+
+/* drop shadow */
+.ds {
+    filter: drop-shadow(8px 8px 10px gray);
 }
 .stroke-n {
 	color: transparent;
@@ -332,12 +337,6 @@ p {
 	animation-timing-function: ease-in-out;
 }
 
-/* patterns */
-
-.bg-dots {
-	background-color: transparent;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.16' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-}
 /* colors ===================*/
 
 .orange {
@@ -453,13 +452,11 @@ p {
 
 /* page/section images */
 
-/* home page ======================*/
-
-/*Photo by Helena Lopes on Unsplash*/
+/*===== Home ======*/
 
 .bg--home-banner {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-home-banner.jpg) center;
-	background: url(/img/redesign-img/jaxx-laptop.jpg) center;
+	background: url(/img/jaxx-laptop.jpg) center right;
+	background: url(/img/jaxx-macbook-iphone-camera-wood.png) center right;
 	background-size: cover;
 }
 .bg--home-devices {
@@ -483,6 +480,11 @@ p {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-testimonials.jpeg) center;
 	background-size: cover;
 }
+.bg--home-partners {
+	background: url(/img/Jaxx-Liberty-Partner-Logos-Laptop-Trans/7.png) center no-repeat;
+	background-size: contain;
+    filter: drop-shadow(8px 8px 10px gray);
+}
 .bg--home-card-support {
 	background: url(/img/jaxx-support-banner.jpg) center;
 	background-size: cover;
@@ -504,13 +506,26 @@ p {
 	background: url(/img/jaxx-app-homescreen.jpg) center;
 	background-size: cover;
 }
-
 .bg-img-app-homepage {
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/img/jaxx-app-homescreen.jpg) center;
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/jaxx-app-homescreen.jpg) center;
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+/*===== Features ======*/
+
+.bg--features-banner {
+    background: url(/img/jaxx-iphone-white-wallets.png) center;
+    background: url(/img/jaxx-ipad-iphone-macbook.png) center;
+	background-size: cover;
+}
+.bg--features-1 {
+    background: url(/img/jaxx-ipad-iphone-macbook.png) center;
+	background-size: cover;
+}
+
+
 
 /* downloads section bg img */
 
@@ -647,12 +662,7 @@ p {
 	background: url(/img/jaxx-multidevice-outline-3.svg) center;
 	background-size: contain;
 }
-/* feawures svg geometric shapes*/
 
-.bg-img-svg-shapes {
-	background: url(/img/jaxx-geo-shapes-2.svg) center;
-	background-size: cover;
-}
 .heart-list-icon {
 	width: 40px;
 }

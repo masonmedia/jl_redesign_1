@@ -24,6 +24,11 @@ $('.navbar-nav>li>a, body').on('click', function(){
     horizontal: false
   });
   
+// aos
+$(document).ready(function() {  
+    AOS.init();
+});
+     
      
 //GSAP + Scroll Magic
     
